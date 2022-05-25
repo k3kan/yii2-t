@@ -9,5 +9,12 @@ return [
         'cache' => [
             'class' => \yii\caching\FileCache::class,
         ],
+        'FrontManager' => [
+            'class' => \yii\web\UrlManager::class,
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'scriptUrl' => '',
+            'baseUrl' => 'http://y2aa-frontend.test'
+        ],
     ],
 ];
